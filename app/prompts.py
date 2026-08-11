@@ -17,8 +17,12 @@ solver_prompt = ChatPromptTemplate.from_messages(
             - Do not invest clues or objects.
             - Do not repeat actions that have already failed.
             - Use the inventory when appropriate.
+            - Track newly discovered clues.
+            - Record useful observations.
             - If the puzzle has been solved, identify the solution.
             - If it has not been solved, determine the most useful next action.
+
+            Be precise and logical.
             """,
         ),
         (

@@ -5,6 +5,6 @@ class EscapeRoomState(TypedDict):
     clues: List[str]
     inventory: List[str]
     observations: List[str]
-    current_actions: str
+    current_action: str
     solution: str
     is_solved: bool
