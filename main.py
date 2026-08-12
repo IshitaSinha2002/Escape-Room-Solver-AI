@@ -24,6 +24,8 @@ def main():
 
         "current_action": "",
 
+        "action_result": "",
+
         "solution": "",
 
         "is_solved": False
@@ -35,6 +37,9 @@ def main():
 
     print("Next Action:")
     print(result["current_action"])
+
+    print("\nAction Result:")
+    print(result["action_result"])
 
     print("\nObservation:")
     print(result["observations"][-1])

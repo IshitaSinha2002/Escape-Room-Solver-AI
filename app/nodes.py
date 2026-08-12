@@ -33,3 +33,11 @@ def analyze_room(state: EscapeRoomState):
         "is_solved": decision.is_solved,
         "solution": decision.solution
     }
+
+def execute_action(state: EscapeRoomState):
+    action = state["current_action"]
+    action_result = f"Action Performed: {action}"
+    return {
+        "action_result": action_result,
+        "observations": state["observations"] + [action_result]
+    }
